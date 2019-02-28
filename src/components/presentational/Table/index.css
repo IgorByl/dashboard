@@ -1,0 +1,91 @@
+.tableClass_wrapper {
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+.mentorName {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #e7e9bb;
+  text-shadow: #000 0 0 3px;
+}
+
+table {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+tr {
+  line-height: 2;
+}
+
+td {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+th {
+  padding: 0 10px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  background-color: #e7e9bb;
+  border-radius: 5px;
+}
+
+td {
+  position: relative;
+}
+
+.table_tasksData::after {
+  content: attr(data-taskstatus);
+  position: absolute;
+  display: inline-block;
+  background-color: rgb(255, 255, 10);
+  border-radius: 3px;
+  opacity: 0;
+  z-index: 1;
+  transition: 1s;
+  bottom: 50%;
+  right: 20%;
+}
+
+.table_tasksData:hover::after {
+  opacity: 0.9;
+}
+
+.checked {
+  background-color: rgb(89, 192, 29);
+}
+
+.checking {
+  background-color: rgb(235, 43, 43);
+}
+
+.todo {
+  background-color: rgb(211, 210, 201);
+}
+
+.inprogress {
+  background-color: rgb(231, 224, 131);
+}
+
+.banished {
+  background-color: rgb(46, 46, 46);
+  color: rgb(226, 221, 221);
+}
+
+.exit {
+  margin-top: 20px;
+}
